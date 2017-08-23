@@ -1,21 +1,53 @@
-body {
-  font-family: "Courier New";
-  font-size: 16px;
+.modal-container {
+  font-family: 'SF Mono';
+  background-color: #2d2d2d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-ul li {
-  list-style: none;
+.modal {
+  background-color: #969696;
+  animation-duration: 300ms;
+  animation-timing-function: ease;
+  animation-name: slidein;
+  position: absolute;
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  top: 30vh;
+  height: 40vh;
+  width: 40vw;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  border-radius: 0.3em;
 }
 
-a {
-  text-decoration: none;
+@keyframes slidein {
+  from {
+    top: 120vh;
+  }
 }
 
-a:hover {
-  text-decoration: underline;
+button {
+  border: 1px solid #ffffff;
+  align-self: center;
+  border-radius: 0.3em;
+  font-size: 1em;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'SF Mono';
+  background: #2d2d2d;
+  transition: background 300ms;
 }
 
-.home-link {
-  font-size: 16px;
-  font-weight: bolder;
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transition: background 200ms;
+  background: #454545;
 }

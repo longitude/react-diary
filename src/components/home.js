@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Scroller from "./scroller";
 import AnimateDelete from "./animateDelete";
+import ModalContent from "./modalContent.js";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Route exact path="/" component={Links} />
         <Route exact path="/animateDelete" component={AnimateDelete} />
         <Route exact path="/scroller" component={Scroller} />
+        <Route exact path="/modalContent" component={ModalContent} />
       </div>
     </Router>
   );
@@ -32,6 +34,9 @@ const Links = () => {
         </li>
         <li>
           <Link to="/scroller">2 - Scroller</Link>
+        </li>
+        <li>
+          <Link to="/modalContent">3 - Modal Animation</Link>
         </li>
       </ul>
     </div>
