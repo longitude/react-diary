@@ -8,3 +8,4 @@
 #### Content
 1. Delete an element and animate
 2. Scroll to a section on your page
+3. Animate modal

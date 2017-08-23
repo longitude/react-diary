@@ -39,8 +39,7 @@ class Modal extends Component {
         <button onClick={this.props.hideModal}>x</button>
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu
-          metus, mattis in pharetra nec, ornare vel eros. Cras dapibus elit eu
-          ex luctus. Holita.
+          metus, mattis in pharetra nec, ornare vel eros.
         </div>
       </div>
     );
