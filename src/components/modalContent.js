@@ -19,7 +19,7 @@ class ModalContent extends Component {
 
   render() {
     return (
-      <div onClick={this.hideModal.bind(this)} className="modal-container">
+        <div onClick={this.hideModal.bind(this)} className="modal-container">
         {this.state.showModal
           ? <Modal hideModal={this.hideModal.bind(this)} />
           : null}

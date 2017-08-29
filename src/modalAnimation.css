@@ -1,0 +1,20 @@
+.modal-container button {
+  border: 1px solid #ffffff;
+  align-self: center;
+  border-radius: 0.3em;
+  font-size: 1em;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'SF Mono';
+  background: #2d2d2d;
+  transition: background 300ms;
+}
+
+.modal-container button:focus {
+  outline: none;
+}
+
+.modal-container button:hover {
+  transition: background 200ms;
+  background: #454545;
+}
